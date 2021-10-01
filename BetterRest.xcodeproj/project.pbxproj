@@ -13,6 +13,7 @@
 		7B9950B1270568E40030518A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9950B0270568E40030518A /* Preview Assets.xcassets */; };
 		7B9950B827056BBB0030518A /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9950B727056BBB0030518A /* Stepper.swift */; };
 		7B9950BA27056D300030518A /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9950B927056D300030518A /* DatePickerView.swift */; };
+		7BA775762706B17200C0C75D /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BA775752706B17200C0C75D /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7B9950B0270568E40030518A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B9950B727056BBB0030518A /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		7B9950B927056D300030518A /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		7BA775752706B17200C0C75D /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7B9950AB270568E30030518A /* ContentView.swift */,
 				7B9950B727056BBB0030518A /* Stepper.swift */,
 				7B9950B927056D300030518A /* DatePickerView.swift */,
+				7BA775752706B17200C0C75D /* SleepCalculator.mlmodel */,
 				7B9950AD270568E40030518A /* Assets.xcassets */,
 				7B9950AF270568E40030518A /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA775762706B17200C0C75D /* SleepCalculator.mlmodel in Sources */,
 				7B9950AC270568E30030518A /* ContentView.swift in Sources */,
 				7B9950B827056BBB0030518A /* Stepper.swift in Sources */,
 				7B9950BA27056D300030518A /* DatePickerView.swift in Sources */,

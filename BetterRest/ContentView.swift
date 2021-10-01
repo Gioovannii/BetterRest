@@ -50,7 +50,7 @@ struct ContentView: View {
     }
     
     func calculateBedTime() {
-        
+        let model = SleepCalculator
     }
 }
 
