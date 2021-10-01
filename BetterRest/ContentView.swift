@@ -66,7 +66,11 @@ struct ContentView: View {
             let prediction = try
             model.prediction(wake: Double(hour + minute), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount))
             let sleepTime = wakeUp - prediction.actualSleep
+            let formatter = DateFormatter()
+            formatter.timeStyle = .short
             
+            alertMessage = formatter.string(from: sleepTime)
+            alertTitle = "Your ideal bedtime is..."
         } catch {
             // something went wrong!
             
