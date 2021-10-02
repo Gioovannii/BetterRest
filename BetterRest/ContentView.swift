@@ -33,13 +33,13 @@ struct ContentView: View {
                         .labelsHidden()
                 }
                 
-                Section(header: Text("Desired amount of sleep")) {
+                Section(header: Text("Desired amount of sleep").font(.headline)) {
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
                         Text("\(sleepAmount, specifier: "%.g") hours")
                     }
                 }
                 
-                Section(header: Text("Daily coffee intake")) {
+                Section(header: Text("Daily coffee intake").font(.headline)) {
                     
                     Picker("Coffee Amount", selection: $coffeeAmount) {
                         ForEach(1...20, id: \.self) { coffeeAmount in
@@ -51,14 +51,6 @@ struct ContentView: View {
                         }
                     }
                 }
-            }
-            .navigationBarTitle("BetterRest")
-            .navigationBarItems(trailing: Button(action: calculateBedTime) {
-                Text("Calculate")
-            }
-            )
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
             }
         }
     }
