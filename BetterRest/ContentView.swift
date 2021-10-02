@@ -22,24 +22,19 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     Text("When do you want to wake up ?")
                         .font(.headline)
-                
+                    
                     DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
-                
-                        .datePickerStyle(WheelDatePickerStyle())
+                    
                 }
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Desired amount of sleep")
                         .font(.headline)
-                
+                    
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
                         Text("\(sleepAmount, specifier: "%.g") hours")
                     }
                 }
-                
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Daily coffee intake")
-                        .font(.headline)
                 
                     Stepper(value: $coffeeAmount, in: 1...20) {
                         if coffeeAmount == 1 {
