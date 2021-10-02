@@ -42,13 +42,6 @@ struct ContentView: View {
                             }
                         }
                     }
-//                    Stepper(value: $coffeeAmount, in: 1...20) {
-//                        if coffeeAmount == 1 {
-//                            Text("1 cup")
-//                        } else {
-//                            Text("\(coffeeAmount) cups")
-//                        }
-//                    }
                 }
             }
             .navigationBarTitle("BetterRest")
