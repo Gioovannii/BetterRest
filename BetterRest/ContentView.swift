@@ -19,14 +19,12 @@ struct ContentView: View {
         
         NavigationView {
             Form {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("When do you want to wake up ?")
-                        .font(.headline)
-                    
+                Section(header: Text("When do you want to wake up ?")) {
+ 
                     DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
-                    
                 }
+                
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Desired amount of sleep")
                         .font(.headline)
