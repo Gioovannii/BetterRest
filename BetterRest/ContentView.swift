@@ -19,8 +19,16 @@ struct ContentView: View {
         
         NavigationView {
             Form {
-                Section(header: Text("When do you want to wake up ?")) {
- 
+                Section(header: Text("Bed time").font(.largeTitle)) {
+                    Text(alertTitle).font(.title)
+                    Text(alertMessage).font(.title)
+                    
+                }.onAppear {
+                    calculateBedTime()
+                }
+                
+                Section(header: Text("When do you want to wake up ?").font(.headline)) {
+                    
                     DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                 }

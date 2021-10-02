@@ -12,7 +12,7 @@ struct DatePickerView: View {
     var body: some View {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
-        let dateString = formatter.string(from: Date())
+//        let dateString = formatter.string(from: Date())
         
         return DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
             .labelsHidden()
